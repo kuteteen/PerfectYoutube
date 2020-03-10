@@ -21,11 +21,6 @@
     UITableView *_table;
 }
 @property(nonatomic, retain) UIBarButtonItem *closeYoutubeButton;
-@property(nonatomic, retain) UIView *headerView;
-@property(nonatomic, retain) UIImageView *headerImageView;
-@property(nonatomic) float headerWidth;
-@property(nonatomic) float headerHeight;
-@property(nonatomic) float headerAspectRatio;
 @property(nonatomic, retain) UILabel *titleLabel;
 - (void)closeYoutube;
 @end
