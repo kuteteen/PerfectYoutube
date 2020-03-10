@@ -19,7 +19,7 @@ int (*BKSTerminateApplicationForReasonAndReportWithDescription)(NSString *displa
         self.navigationItem.rightBarButtonItem = self.closeYoutubeButton;
 
         self.navigationItem.titleView = [UIView new];
-        self.titleLabel = [[UILabel alloc] initWithFrame: CGRectMake(0, 0, 10, 10)];
+        self.titleLabel = [[UILabel alloc] init];
         self.titleLabel.font = [UIFont boldSystemFontOfSize: 17];
         self.titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
         self.titleLabel.text = @"PerfectYoutube";
@@ -37,37 +37,6 @@ int (*BKSTerminateApplicationForReasonAndReportWithDescription)(NSString *displa
         ]];
     }
     return self;
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-
-    self.headerImageView = [[UIImageView alloc] initWithImage: [UIImage imageNamed: @"PYTHeader" inBundle: [NSBundle bundleForClass: [self class]] compatibleWithTraitCollection:nil]];
-    self.headerImageView.contentMode = UIViewContentModeTop;
-    self.headerImageView.translatesAutoresizingMaskIntoConstraints = NO;
-    
-	self.headerWidth = [UIScreen mainScreen].bounds.size.width;
-	self.headerAspectRatio = self.headerImageView.image.size.height / self.headerImageView.image.size.width;
-	self.headerHeight = self.headerWidth * self.headerAspectRatio;
-
-	self.headerView = [[UIView alloc] initWithFrame: CGRectMake(0, 0, self.headerWidth, self.headerHeight + 15)];
-    [self.headerView addSubview:self.headerImageView];
-
-    [NSLayoutConstraint activateConstraints:
-	@[
-        [self.headerImageView.topAnchor constraintEqualToAnchor: self.headerView.topAnchor],
-        [self.headerImageView.leadingAnchor constraintEqualToAnchor: self.headerView.leadingAnchor],
-        [self.headerImageView.trailingAnchor constraintEqualToAnchor: self.headerView.trailingAnchor],
-        [self.headerImageView.bottomAnchor constraintEqualToAnchor: self.headerView.bottomAnchor],
-    ]];
-    _table.tableHeaderView = self.headerView;
-}
-
-- (UITableViewCell*)tableView: (UITableView*)tableView cellForRowAtIndexPath: (NSIndexPath*)indexPath
-{
-    tableView.tableHeaderView = self.headerView;
-    return [super tableView:tableView cellForRowAtIndexPath: indexPath];
 }
 
 - (void)viewWillAppear: (BOOL)animated
@@ -97,13 +66,8 @@ int (*BKSTerminateApplicationForReasonAndReportWithDescription)(NSString *displa
 
 - (void)scrollViewDidScroll: (UIScrollView*)scrollView
 {
-    CGFloat offsetY = scrollView.contentOffset.y;
-
-    if (offsetY > self.headerHeight / 2.0) [UIView animateWithDuration: 0.2 animations: ^{ self.titleLabel.alpha = 1.0; }];
+    if (scrollView.contentOffset.y > [PYTRootHeaderView headerH] / 2.0) [UIView animateWithDuration: 0.2 animations: ^{ self.titleLabel.alpha = 1.0; }];
 	else [UIView animateWithDuration:0.2 animations: ^{ self.titleLabel.alpha = 0.0; }];
-
-    if (offsetY > 0) offsetY = 0;
-    self.headerImageView.frame = CGRectMake(0, offsetY, self.headerView.frame.size.width, self.headerHeight - offsetY);
 }
 
 - (NSArray*)specifiers

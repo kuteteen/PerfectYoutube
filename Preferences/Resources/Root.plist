@@ -5,6 +5,14 @@
 	<key>items</key>
 	<array>
 		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>headerCellClass</key>
+			<string>PYTRootHeaderView</string>
+			<key>icon</key>
+			<string>PYTHeader.png</string>
+		</dict>
+		<dict>
         	<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>label</key>

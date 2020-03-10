@@ -4,7 +4,7 @@ TARGET = iphone:clang:11.2:11.2
 include $(THEOS)/makefiles/common.mk
 
 BUNDLE_NAME = PerfectYoutubePrefs
-PerfectYoutubePrefs_FILES = PYTAppearanceSettings.m PYTRootListController.xm
+PerfectYoutubePrefs_FILES = PYTAppearanceSettings.m PYTRootHeaderView.mm PYTRootListController.xm
 PerfectYoutubePrefs_INSTALL_PATH = /Library/PreferenceBundles
 PerfectYoutubePrefs_FRAMEWORKS = UIKit
 PerfectYoutubePrefs_PRIVATE_FRAMEWORKS = Preferences
