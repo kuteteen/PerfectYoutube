@@ -1,5 +1,16 @@
 #import "PerfectYoutube.h"
 
+#import <Cephei/HBPreferences.h>
+
+static HBPreferences *pref;
+static BOOL backgroundPlayback;
+static BOOL disableAds;
+static BOOL hideDownloadButton;
+static BOOL hideCastButton;
+static BOOL hideVoiceSearchButton;
+static BOOL disableHints;
+static BOOL hideInboxTab;
+
 // ENABLE BACKGROUND PLAYBACK
 
 %group backgroundPlaybackGroup
