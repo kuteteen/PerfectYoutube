@@ -9,7 +9,7 @@ include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = PerfectYoutube
 PerfectYoutube_FILES = PerfectYoutube.xm
-PerfectYoutube_CFLAGS = -fobjc-arc
+PerfectYoutube_CFLAGS = -fobjc-arc -Wno-nullability-completeness
 PerfectYoutube_EXTRA_FRAMEWORKS += Cephei
 
 include $(THEOS_MAKE_PATH)/tweak.mk

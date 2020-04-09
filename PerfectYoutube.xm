@@ -140,6 +140,7 @@ static BOOL disableHints;
 	%end
 
 %end
+
 // SHOW VIDEO PROGRESS BAR WHILE PLAYING VIDEO
 
 %group showProgressBarInVideoGroup

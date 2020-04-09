@@ -224,18 +224,6 @@
 			<key>defaults</key>
 			<string>com.johnzaro.perfectyoutubeprefs</string>
 			<key>key</key>
-			<string>hideFirstAdOnHomeTab</string>
-			<key>label</key>
-			<string>Hide First Ad In Home Tab</string>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSSwitchCell</string>
-			<key>default</key>
-			<false/>
-			<key>defaults</key>
-			<string>com.johnzaro.perfectyoutubeprefs</string>
-			<key>key</key>
 			<string>hideStories</string>
 			<key>label</key>
 			<string>Hide Stories</string>
