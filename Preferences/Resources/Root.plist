@@ -16,13 +16,13 @@
         	<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>label</key>
-			<string>Settings</string>
+			<string>PLAYBACK SETTINGS</string>
         </dict>
 		<dict>
 			<key>cell</key>
 			<string>PSSwitchCell</string>
 			<key>default</key>
-			<true/>
+			<false/>
 			<key>defaults</key>
 			<string>com.johnzaro.perfectyoutubeprefs</string>
 			<key>key</key>
@@ -34,19 +34,85 @@
 			<key>cell</key>
 			<string>PSSwitchCell</string>
 			<key>default</key>
-			<true/>
+			<false/>
 			<key>defaults</key>
 			<string>com.johnzaro.perfectyoutubeprefs</string>
 			<key>key</key>
-			<string>disableAds</string>
+			<string>disableInVideoAds</string>
 			<key>label</key>
-			<string>Disable Ads</string>
+			<string>Disable In Video Ads</string>
 		</dict>
 		<dict>
 			<key>cell</key>
 			<string>PSSwitchCell</string>
 			<key>default</key>
-			<true/>
+			<false/>
+			<key>defaults</key>
+			<string>com.johnzaro.perfectyoutubeprefs</string>
+			<key>key</key>
+			<string>allowHDOnCellular</string>
+			<key>label</key>
+			<string>Allow HD On Cellular</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.johnzaro.perfectyoutubeprefs</string>
+			<key>key</key>
+			<string>noPopupsOnVideoEnd</string>
+			<key>label</key>
+			<string>No Pop Ups On Video End</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.johnzaro.perfectyoutubeprefs</string>
+			<key>key</key>
+			<string>hideDarkBackgroundOverlayInVideo</string>
+			<key>label</key>
+			<string>Hide Dark Background Overlay In Video</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.johnzaro.perfectyoutubeprefs</string>
+			<key>key</key>
+			<string>showProgressBarInVideo</string>
+			<key>label</key>
+			<string>Show Progress Bar In Video</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.johnzaro.perfectyoutubeprefs</string>
+			<key>key</key>
+			<string>hideComments</string>
+			<key>label</key>
+			<string>Hide Comments Section</string>
+		</dict>
+		<dict>
+        	<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>HIDE BUTTONS</string>
+        </dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
 			<key>defaults</key>
 			<string>com.johnzaro.perfectyoutubeprefs</string>
 			<key>key</key>
@@ -58,7 +124,19 @@
 			<key>cell</key>
 			<string>PSSwitchCell</string>
 			<key>default</key>
-			<true/>
+			<false/>
+			<key>defaults</key>
+			<string>com.johnzaro.perfectyoutubeprefs</string>
+			<key>key</key>
+			<string>hideCreateVideoButton</string>
+			<key>label</key>
+			<string>Hide Create Video Button</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
 			<key>defaults</key>
 			<string>com.johnzaro.perfectyoutubeprefs</string>
 			<key>key</key>
@@ -70,7 +148,7 @@
 			<key>cell</key>
 			<string>PSSwitchCell</string>
 			<key>default</key>
-			<true/>
+			<false/>
 			<key>defaults</key>
 			<string>com.johnzaro.perfectyoutubeprefs</string>
 			<key>key</key>
@@ -79,28 +157,100 @@
 			<string>Hide Voice Search Button</string>
 		</dict>
 		<dict>
+        	<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>BOTTOM BAR TABS</string>
+        </dict>
+		<dict>
 			<key>cell</key>
 			<string>PSSwitchCell</string>
 			<key>default</key>
-			<true/>
+			<false/>
 			<key>defaults</key>
 			<string>com.johnzaro.perfectyoutubeprefs</string>
 			<key>key</key>
-			<string>disableHints</string>
+			<string>hideExploreTab</string>
 			<key>label</key>
-			<string>Disable Hints</string>
+			<string>Hide Explore Tab</string>
 		</dict>
 		<dict>
 			<key>cell</key>
 			<string>PSSwitchCell</string>
 			<key>default</key>
-			<true/>
+			<false/>
+			<key>defaults</key>
+			<string>com.johnzaro.perfectyoutubeprefs</string>
+			<key>key</key>
+			<string>hideSubscriptionsTab</string>
+			<key>label</key>
+			<string>Hide Subscriptions Tab</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
 			<key>defaults</key>
 			<string>com.johnzaro.perfectyoutubeprefs</string>
 			<key>key</key>
 			<string>hideInboxTab</string>
 			<key>label</key>
 			<string>Hide Inbox Tab</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.johnzaro.perfectyoutubeprefs</string>
+			<key>key</key>
+			<string>hideLibraryTab</string>
+			<key>label</key>
+			<string>Hide Library Tab</string>
+		</dict>
+		<dict>
+        	<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>OTHER OPTIONS</string>
+        </dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.johnzaro.perfectyoutubeprefs</string>
+			<key>key</key>
+			<string>hideFirstAdOnHomeTab</string>
+			<key>label</key>
+			<string>Hide First Ad In Home Tab</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.johnzaro.perfectyoutubeprefs</string>
+			<key>key</key>
+			<string>hideStories</string>
+			<key>label</key>
+			<string>Hide Stories</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.johnzaro.perfectyoutubeprefs</string>
+			<key>key</key>
+			<string>disableHints</string>
+			<key>label</key>
+			<string>Disable Hints</string>
 		</dict>
 		<dict>
         	<key>cell</key>

@@ -3,6 +3,7 @@ ARCHS = arm64 arm64e
 TARGET = iphone:clang:13.2:13.2
 
 INSTALL_TARGET_PROCESSES = YouTube Preferences
+GO_EASY_ON_ME = 1
 
 include $(THEOS)/makefiles/common.mk
 
