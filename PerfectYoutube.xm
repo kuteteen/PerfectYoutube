@@ -149,7 +149,7 @@ static BOOL disableHints;
 
 	- (void)setPlayerViewLayout: (int)arg1
 	{
-		%orig(0);
+		%orig(2);
 	}
 
 	%end
